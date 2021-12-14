@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       <bean class="org.springframework.yq.service.impl.MessageServiceImpl" id="messageService"/>
+	   <!-- 给messageService起一个别名messageServiceAlias 后续可以通过getBean("messageServiceAlias")拿到这个bean -->
+	   <alias name="messageService" alias="messageServiceAlias"/>
+	<!-- 这个后期要具体跟一下-->
+<!--	   <bean class="org.springframework.yq.entity.TestFactoryBean" id="factoryBean" />-->
+</beans>
